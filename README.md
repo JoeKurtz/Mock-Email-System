@@ -6,23 +6,23 @@ To create the mock email system, I first had to create functions that would perf
 These Functions Include:
 
 ### Email Setup Functions:
-(1) valid_username : Determines if the username supplied is valid
-(2) valid_password : Determines if the password supplied is valid
-(3) username_exists : Determines if the username already exists in the file 'user_info.txt'
-(4) check_password : Determines if the username / password combination supplied matches one of the user accounts represented in the 'user_info.txt' file
-(5) add_user : If the user being supplied is not already in the 'user_info.txt' file they should be added, along with their password.
+- (1) _valid_username_ : Determines if the username supplied is valid
+- (2) _valid_password_ : Determines if the password supplied is valid
+- (3) _username_exists_ : Determines if the username already exists in the file 'user_info.txt'
+- (4) _check_password_ : Determines if the username / password combination supplied matches one of the user accounts represented in the 'user_info.txt' file
+- (5) _add_user_ : If the user being supplied is not already in the 'user_info.txt' file they should be added, along with their password.
 
 ### Email Processes Functions:
-(6) send_message
-(7) print_messages
-(8) delete_messages
-(15) decode_message
+- (6) _send_message_ : Writes a new line into the specific messages file for the given users with the following information: sender|date_and_time|message\n
+- (7) _print_messages_ : Prints all messages sent to the username in question
+- (8) _delete_messages_ : Erases all data in the messages file for this user
 
 ### Encryption Functions: 
-(9) ascii_shift
-(10) shift_right
-(11) shift_left
-(12) flip
-(13) add_letters
-(14) delete_characters
-'''
+- (9) _ascii_shift_
+- (10) _shift_right_
+- (11) _shift_left_
+- (12) _flip_
+- (13) _add_letters_
+- (14) _delete_characters_
+- (15) _decode_message_
+
