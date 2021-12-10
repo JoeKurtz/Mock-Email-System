@@ -1,8 +1,6 @@
 '''
-Joe Kurtz (Done with Stanley Cohen)
-Introduction to Computer Programming
+Joe Kurtz
 11/22/21
-Part 1
 '''
 import datetime
 d = datetime.datetime.now()
@@ -745,20 +743,6 @@ while True:
         print("Goodbye!")
         break
 
-    
-"""
-THINGS TO DO:
-(1) IF RECEPIENT DOESNT EXIST, DONT PROMPT FOR MESSAGE - DONE
-(2) IF FILE IS EMPTY AND CHOOSE "R", SAY "No messages in your inbox" (COULD BE DONE BETTER)
-(3) ADD IN ENCRYPTION PART TO "S" AFTER LOG IN - DONE
-(4) ENCRYPT "U" NEEDS TO FIX LOWERCASE WRAP AROUND PROBLEM - DONE ...?...
-
-
-THINGS TO DO PT. 2:
-(2) IF FILE IS EMPTY AND CHOOSE "R", SAY "No messages in your inbox" (COULD BE DONE BETTER)
-(5) ADD IN DECRYPTION PART TO "R" AFTER LOG IN
-(6) FIX PART WITH MESSAGE_NUM TO SEE IF MESSAGE EXISTS
-"""
 
                        
     
