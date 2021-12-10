@@ -26,3 +26,17 @@ These Functions Include:
 - (14) _delete_characters_
 - (15) _decode_message_
 
+## Email System (w/ Code Examples)
+Once ran, the system present the user with **Three** Options:
+1. *Login*
+2. *Register*
+3. *Quit*
+
+*NOTE*: Basic Data Validation Ensues to Ensure User Complies With Request
+```
+command = str.upper(input("(l)ogin, (r)egister or (q)uit: "))
+while command not in "LRQ":
+  print("Invalid Command, Try Again!")
+  print()
+  command = str.upper(input("(l)ogin, (r)egister or (q)uit: "))
+```
