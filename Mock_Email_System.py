@@ -495,7 +495,6 @@ LIST OF FUNCTIONS (For Reference):
 (8) delete_messages
 (15) decode_message
 
-ADDING A7 FUNCTIONS (W/O IPO NOTATION):
 (9) ascii_shift
 (10) shift_right
 (11) shift_left
