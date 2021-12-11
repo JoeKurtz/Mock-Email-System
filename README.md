@@ -27,7 +27,7 @@ These Functions Include:
 - (15) _decode_message_
 
 ## Email System (w/ Code Examples)
-Once ran, the system present the user with **Three** Options:
+Once ran, the system presents the user with **Three** Options:
 1. *Login*
 2. *Register*
 3. *Quit*
