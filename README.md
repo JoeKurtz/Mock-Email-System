@@ -110,3 +110,13 @@ Decrypted message: APPLE
 ```
 
 The user is then reprompted which option of functionality they want to perform
+
+#### Send a Message
+#### Delete all Messages
+The "delete_messages" function is opened up, which opens the user's "{user_name}.txt" file, and all content in the file is deleted, including the message from admin. <br/>
+If the user then selects read messages, no messages are printed.
+#### Log Out
+The user is returned to the main menu, where they can once again:
+- Log In
+- Register
+- Quit
