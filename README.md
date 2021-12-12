@@ -56,6 +56,16 @@ The entered Username and Password are passed through the validation functins oui
 Otherwise, the username and password complies, and the username/password pair is added to the "user_info.txt" file using the "add_user" function <br />
 <br />
 The Username is also automatically sent a message from the admin to their inbox, timestamped at the current time at registration. For instance, a user that registers at 2:58:04 PM on 12/12/2021 is automatically sent the following message from "admin":
+
 ```
 admin|12/12/2021 14:58:4|Welcome to your account!
 ```
+<br />
+Upon successful registration, the user is returned to the main menu
+
+### Login
+Once the user is registered, he is able to successfuly login. The user is prompted to enter in his _username_ and _password_. Given that the user enters the correct username/password pair, he is prompted a list of options of functionality:
+1. Read Messages
+2. Send a Message
+3. Delete all Messages
+4. Log Out
