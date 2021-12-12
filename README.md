@@ -40,3 +40,21 @@ while command not in "LRQ":
   print()
   command = str.upper(input("(l)ogin, (r)egister or (q)uit: "))
 ```
+
+### Register
+The User is Prompted to Enter a Username & Password
+
+```
+user = input("Username (case sensitive): ")
+password = input("Password (case sensitive): ")
+```
+
+The entered Username and Password are passed through the validation functins ouitlined above to ensure the username and password comply with the necessary requirements.
+- If the Username exists or doesn't comply with requirements, the user is taken back to the main menu
+- If the Password does not comply with requirements, the user is taken back to the main menu
+
+Otherwise, the username and password complies, and the username/password pair is added to the "user_info.txt" file using the "add_user" function
+The Username is also automatically sent a message from the admin to their inbox, timestamped at the current time at registration
+```
+
+```
