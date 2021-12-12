@@ -83,4 +83,30 @@ Message #2 received from Def456
 Time: 12/12/2021 15:0:22
 Hi, How are you doing?!
 ```
+The user is also asked if they want to decode one of their messages if they have a coded message <br />
+For instance, assume user "Abc123" Inbox was follows:
+```
+Message #1 received from admin
+Time: 12/12/2021 15:0:22
+Welcome to your account!
 
+Message #2 received from Def456
+Time: 12/12/2021 15:0:22
+Hi, How are you doing?!
+
+Message #3 received from Def456
+Time: 12/12/2021 15:0:22
+DSSOH
+```
+Then, the user is asked:
+```
+Would you like to decode one of your messages? (y)es or (n)o: _y_
+Which message number would you like to decode? _3_
+Enter your decryption key (valid commands include 'AXFUDLR'): _DDD_
+```
+The following would be returned to the request to decode the _third_ message:
+```
+Decrypted message: APPLE
+```
+
+The user is then reprompted which option of functionality they want to perform
