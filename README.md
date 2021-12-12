@@ -69,3 +69,18 @@ Once the user is registered, he is able to successfuly login. The user is prompt
 2. Send a Message
 3. Delete all Messages
 4. Log Out
+
+
+#### Read Messages
+The User's inbox stored in the messages folder under "{user_name}.txt" is printed onto the screen in Message # \n Timestamp \n Message Format <br />
+For instance, user "Abc123" Inbox would print as follows:
+```
+Message #1 received from admin
+Time: 12/12/2021 15:0:22
+Welcome to your account!
+
+Message #2 received from Def456
+Time: 12/12/2021 15:0:22
+Hi, How are you doing?!
+```
+
