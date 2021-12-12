@@ -40,3 +40,84 @@ while command not in "LRQ":
   print()
   command = str.upper(input("(l)ogin, (r)egister or (q)uit: "))
 ```
+
+### Register
+The User is Prompted to Enter a Username & Password
+
+```
+user = input("Username (case sensitive): ")
+password = input("Password (case sensitive): ")
+```
+
+The entered Username and Password are passed through the validation functins ouitlined above to ensure the username and password comply with the necessary requirements.
+- If the Username exists or doesn't comply with requirements, the user is taken back to the main menu
+- If the Password does not comply with requirements, the user is taken back to the main menu
+
+Otherwise, the username and password complies, and the username/password pair is added to the "user_info.txt" file using the "add_user" function <br />
+<br />
+The Username is also automatically sent a message from the admin to their inbox, timestamped at the current time at registration. For instance, a user that registers at 2:58:04 PM on 12/12/2021 is automatically sent the following message from "admin":
+
+```
+admin|12/12/2021 14:58:4|Welcome to your account!
+```
+<br />
+Upon successful registration, the user is returned to the main menu
+
+### Login
+Once the user is registered, he is able to successfuly login. The user is prompted to enter in his _username_ and _password_. Given that the user enters the correct username/password pair, he is prompted a list of options of functionality:
+1. Read Messages
+2. Send a Message
+3. Delete all Messages
+4. Log Out
+
+
+#### Read Messages
+The User's inbox stored in the messages folder under "{user_name}.txt" is printed onto the screen in Message # \n Timestamp \n Message Format <br />
+For instance, user "Abc123" Inbox would print as follows:
+```
+Message #1 received from admin
+Time: 12/12/2021 15:0:22
+Welcome to your account!
+
+Message #2 received from Def456
+Time: 12/12/2021 15:0:22
+Hi, How are you doing?!
+```
+The user is also asked if they want to decode one of their messages if they have a coded message <br />
+For instance, assume user "Abc123" Inbox was follows:
+```
+Message #1 received from admin
+Time: 12/12/2021 15:0:22
+Welcome to your account!
+
+Message #2 received from Def456
+Time: 12/12/2021 15:0:22
+Hi, How are you doing?!
+
+Message #3 received from Def456
+Time: 12/12/2021 15:0:22
+DSSOH
+```
+Then, the user is asked:
+```
+Would you like to decode one of your messages? (y)es or (n)o: _y_
+Which message number would you like to decode? _3_
+Enter your decryption key (valid commands include 'AXFUDLR'): _DDD_
+```
+The following would be returned to the request to decode the _third_ message:
+```
+Decrypted message: APPLE
+```
+
+The user is then reprompted which option of functionality they want to perform
+
+#### Send a Message
+#### Delete all Messages
+The "delete_messages" function is opened up, which opens the user's "{user_name}.txt" file, and all content in the file is deleted, including the message from admin. <br/>
+<br/>
+If the user then selects read messages, no messages are printed.
+#### Log Out
+The user is returned to the main menu, where they can once again:
+- Log In
+- Register
+- Quit
