@@ -121,3 +121,6 @@ The user is returned to the main menu, where they can once again:
 - Log In
 - Register
 - Quit
+
+### Quit
+The system is ended. All data is stored within .txt files for rerun.
