@@ -33,7 +33,7 @@ Once ran, the system presents the user with **Three** Options:
 3. *Quit*
 
 *NOTE*: Basic Data Validation Ensues to Ensure User Complies With Request
-```
+```python
 command = str.upper(input("(l)ogin, (r)egister or (q)uit: "))
 while command not in "LRQ":
   print("Invalid Command, Try Again!")
@@ -44,7 +44,7 @@ while command not in "LRQ":
 ### Register
 The User is Prompted to Enter a Username & Password
 
-```
+```python
 user = input("Username (case sensitive): ")
 password = input("Password (case sensitive): ")
 ```
@@ -121,3 +121,6 @@ The user is returned to the main menu, where they can once again:
 - Log In
 - Register
 - Quit
+
+### Quit
+The system is ended. All data is stored within .txt files for rerun.
